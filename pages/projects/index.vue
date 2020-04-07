@@ -12,43 +12,16 @@
 
 <script>
   import Project from "../../components/Project";
+  import projectDetails from "../../assets/projectDetails";
+
   export default {
     components: {
       Project
     },
-    asyncData() {
-      return new Promise((resolve, reject) => {
-        setTimeout(() => {
-          resolve({
-            projects: [
-              {
-                id: '1',
-                title: 'test one',
-                previewText: 'some great stuff here',
-                thumbnail: 'https://upload.wikimedia.org/wikipedia/en/5/56/Google_maps_screenshot.png'
-              },
-              {
-                id: '2',
-                title: 'test two',
-                previewText: 'totally the best',
-                thumbnail: 'https://upload.wikimedia.org/wikipedia/en/5/56/Google_maps_screenshot.png'
-              },
-              {
-                id: '3',
-                title: 'test three',
-                previewText: 'so super',
-                thumbnail: 'https://upload.wikimedia.org/wikipedia/en/5/56/Google_maps_screenshot.png'
-              },
-              {
-                id: '4',
-                title: 'test four',
-                previewText: 'hot and new',
-                thumbnail: 'https://upload.wikimedia.org/wikipedia/en/5/56/Google_maps_screenshot.png'
-              }
-            ]
-          })
-        }, 500)
-      })
+    data() {
+      return {
+        projects: projectDetails.projects
+      }
     }
   }
 </script>

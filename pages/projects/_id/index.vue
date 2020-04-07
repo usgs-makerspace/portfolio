@@ -1,52 +1,77 @@
 <template>
   <section class="single-project">
-    <h1>{{ $route.params.id }}</h1>
+    <h1>{{ project.title }}</h1>
     <div>
       <img class="project-image" :src="project.thumbnail" :alt="project.title">
     </div>
-    <p>{{ project.descriptionText }}</p>
+    <div class="project-details">
+      <p>{{ project.title }}</p>
+      <p>{{ project.descriptionText }}</p>
+      <p>Current Status: {{ project.currentStatus }}</p>
+      <p>Rationale for Current Status: {{ project.currentStatusRationale }}</p>
+      <p>Technology used:
+        <span v-for="(technologyType, index) in project.technologyUsed">
+        <span v-if="index !== 0">, </span><span>{{ technologyType }}</span>
+      </span>
+      </p>
+      <p>Key Terms:
+        <span v-for="(term, index) in project.keyTerms">
+        <span v-if="index !== 0">, </span><span>{{ term }}</span>
+      </span>
+      </p>
+    </div>
+    <div class="key-points">
+      <hr>
+      <p>Key Points:</p>
+      <p>{{ project.keyPoints }}</p>
+    </div>
+    <div class="project-related-links">
+      <hr>
+      <p>Project Links:</p>
+      <div v-for="(link, index) in project.links">
+        <p>
+          <a
+            :href="link[1]"
+            target="_blank"
+          >
+            <span v-html="link[0]" />
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="periods-of-work">
+      <hr>
+      <p>Periods of Work and Contributors</p>
+      <div v-for="(workPeriod, index) in project.periodsOfWork">
+        <ul>
+          <li>Period {{ index + 1 }}
+            <p>{{ workPeriod.workPeriod.startDate }} to
+              <span v-if="workPeriod.workPeriod.endDate === ''">current</span>
+              <span v-if="workPeriod.workPeriod.endDate !== ''">{{ workPeriod.workPeriod.endDate }}</span>
+            </p>
+            <p>
+              - contributors
+              <span v-for="(contributor, index) in workPeriod.contributors">
+                <span v-if="index !== 0">, </span>
+                <span>{{ contributor }}</span>
+              </span>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <hr>
+    </div>
   </section>
 </template>
 
 <script>
+  import projectDetails from "../../../assets/projectDetails";
+
   export default {
-    asyncData(context) {
-      return new Promise((resolve, reject) => {
-        setTimeout(() => {
-          resolve({
-            project: [
-              {
-                id: '1',
-                title: 'test one',
-                previewText: 'some great stuff here',
-                descriptionText: 'this is the best project ever',
-                thumbnail: 'https://upload.wikimedia.org/wikipedia/en/5/56/Google_maps_screenshot.png'
-              },
-              {
-                id: '2',
-                title: 'test two',
-                previewText: 'totally the best',
-                descriptionText: 'even better and does all the stuff you want',
-                thumbnail: 'https://upload.wikimedia.org/wikipedia/en/5/56/Google_maps_screenshot.png'
-              },
-              {
-                id: '3',
-                title: 'test three',
-                previewText: 'so super',
-                descriptionText: 'this is the superest project ever',
-                thumbnail: 'https://upload.wikimedia.org/wikipedia/en/5/56/Google_maps_screenshot.png'
-              },
-              {
-                id: '4',
-                title: 'test four',
-                previewText: 'hot and new',
-                descriptionText: 'as hard as it is to believe, this is even better than the last thing.',
-                thumbnail: 'https://upload.wikimedia.org/wikipedia/en/5/56/Google_maps_screenshot.png'
-              }
-            ].find(project => project.id === context.params.id)
-          })
-        }, 500)
-      })
+    data() {
+      return {
+        project: projectDetails.projects.find(project => project.id === this.$route.params.id)
+      }
     }
   }
 </script>
@@ -55,9 +80,8 @@
   .single-project {
     display: flex;
     flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: left;
+    text-align: left;
     padding: 30px;
 
     .project-image {
