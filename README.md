@@ -37,7 +37,7 @@ the JSON file can also be stored in an external location such as a S3 bucket. I 
 open to suggestions whether that would be a better option.   
 
 ##How to Get Your Project to Show on the Projects Page 
-Clone the repository to your local system
+Fork the repository. Clone your fork to your local system. 
 
 If you have an interest in previewing your changes, you will need follow the instructions
 in the 'Build Setup' section that follows. If you do not wish to preview your changes, 
