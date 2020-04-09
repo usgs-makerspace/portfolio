@@ -1,5 +1,15 @@
 
 export default {
+  // router: { this either works locally or deployed but not both, so still some work to do here.
+  //   base:'./'
+  // },
+  // builder: {
+  //   extend(config, {isDev}) {
+  //     if (!isDev) {
+  //       config.output.publicPath = './_nuxt/'
+  //     }
+  //   }
+  // },
   mode: 'universal',
   /*
   ** Headers of the page
