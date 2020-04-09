@@ -7,6 +7,11 @@
     <div class="project-details">
       <p>{{ project.title }}</p>
       <p>{{ project.descriptionText }}</p>
+      <p>Project Funding:
+        <span v-for="(funder, index) in project.fundingProviders">
+        <span v-if="index !== 0">, </span><span>{{ funder }}</span>
+      </span>
+      </p>
       <p>Current Status: {{ project.currentStatus }}</p>
       <p>Rationale for Current Status: {{ project.currentStatusRationale }}</p>
       <p>Technology used:

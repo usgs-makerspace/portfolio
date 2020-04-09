@@ -1,9 +1,10 @@
 export default {
   projects: [
     {
-      "id":"4",
+      "id":"3",
       "project": "Idea Blitz",
       "title":"Where Is Earth's Water",
+      "fundingProviders": ["VizLab"],
       "previewText":"Video demonstration of Photoshop animation ",
       "descriptionText":"An animated remake of various graphics from the Water Science School to help learners better " +
         "visualize the tiny percentage of the Earth's water that is consumable by humans.",
@@ -30,9 +31,11 @@ export default {
       ]
     },
     {
-      "id":"3",
+      "id":"2",
       "project": "Idea Blitz",
       "title":"Water Quiz",
+      "fundingProviders": ["VizLab"],
+      "projectsProvidingFunding": ["VizLab"],
       "previewText":"Test Your Water IQ",
       "descriptionText":"A JavaScript based quiz which gives the user immediate feedback.",
       "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-march/water-quiz/portfolio-images/WaterSchoolQuiz1300x726.jpg",
@@ -53,9 +56,10 @@ export default {
       ]
     },
     {
-      "id":"2",
+      "id":"1",
       "project": "Idea Blitz",
       "title":"How Wet Is My State",
+      "fundingProviders": ["VizLab"],
       "previewText":"Quickly create and style maps from JSON data",
       "descriptionText":"A JavaScript based quiz which gives the user immediate feedback.",
       "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-march/how-wet-is-my-state/portfolio-images/howWetIsMyState1300x726.jpg",
@@ -76,14 +80,6 @@ export default {
         ["GitHub", "https://github.com/abriggs-usgs/wbeep-viz/tree/ideaBlitz_waterPerState"],
         ["Original Water Science School Version", "https://www.usgs.gov/special-topic/water-science-school/science/how-wet-your-state-water-area-each-state?qt-science_center_objects=0#qt-science_center_objects "]
       ]
-    },
-    {
-      "id":"1",
-      "project": "Idea Blitz",
-      "title":"test four",
-      "previewText":"hot and new",
-      "descriptionText":"as hard as it is to believe, this is even better than the last thing.",
-      "thumbnail":"https://upload.wikimedia.org/wikipedia/en/5/56/Google_maps_screenshot.png"
     }
   ]
 }

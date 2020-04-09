@@ -3,7 +3,7 @@
     <nav>
       <ul>
         <li>
-          <nuxt-link to="/">portfolio home</nuxt-link>
+          <nuxt-link to="/">home</nuxt-link>
           <nuxt-link to="/projects">projects</nuxt-link>
           <nuxt-link to="/about">about</nuxt-link>
         </li>

@@ -120,6 +120,10 @@ And that is it. May it seem complicated on a first reading, but in reality the p
 $ npm install
 
 # serve with hot reload at localhost:3000
+# Note: you will need Node.js on your system for this to work
+# Note: this sometimes fails do to system changes, 
+# usally running 'npm rebuild node-sass' will fix the issue
+
 $ npm run dev
 
 # build for production and launch server
