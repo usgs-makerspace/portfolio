@@ -10,7 +10,7 @@ export default {
         "available daily estimates of natural water storage for approximately 110,000 regions across the " +
         "lower forty-eight states. Map shading indicates the current natural water storage relative to " +
         "historical conditions for this time of year.",
-      "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-march/where-is-earths-water/portfolio-images/whereIsWater1300x726.jpg",
+      "thumbnail":"s3://internal.wma.chs.usgs.gov/makerspace-portfolio/water-budget-estimation-evaluation-project/wbeep-water-storage/portfolio-images/wbeep_still_image.png",
       "currentStatus": "complete",
       "currentStatusRationale": "This concept map was released publicly Dec 18, 2019 to meet a deadline defined in the Presidential Memo on Water in the West.",
       "periodsOfWork": [
