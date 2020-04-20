@@ -46,7 +46,7 @@ the build step is not required.
 To add your new project:
 
 The first step here is to decided what parts of the project are important to store and 
-where. The 'portfolio' application is in an Amazon Web Services (AWS) 'bucket', https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/ .
+where. The 'portfolio' application is in an Amazon Web Services (AWS) 'bucket', http://internal.wma.chs.usgs.gov.s3-website-us-west-2.amazonaws.com/makerspace-portfolio/makerspace-portfolio-application/ .
 Inside that bucket there are folders related to project/efforts/functions of Makerspace.
 You can view this bucket using the AWS console. 
 If a folder does not exist for your project you can create it using the existing pattern as
