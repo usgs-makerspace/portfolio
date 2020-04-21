@@ -45,6 +45,11 @@ If you have an interest in previewing your changes, you will need follow the ins
 in the 'Build Setup' section that follows. If you do not wish to preview your changes, 
 the build step is not required. 
 
+`Note if you do choose to follow the build steps at the bottom of the page, you will want to use
+http://localhost:3000/makerspace-portfolio/makerspace-portfolio-application/ as the URL to run to
+run the application. This is becaue the local deployment is matching the folder structure of the Simple Storage Solutions (S3)
+on Amazon Web Services (AWS).`
+
 ### Description of content you could add
 
 The first step here is to decided what parts of the project are important to store and 
