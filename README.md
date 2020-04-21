@@ -1,6 +1,8 @@
 # makerspace-portfolio
 
 > Gallery of Makerspace Projects
+http://internal.wma.chs.usgs.gov.s3-website-us-west-2.amazonaws.com/makerspace-portfolio/makerspace-portfolio-application/
+
 
 ## Notes and Instructions
 Note: This is a work in progress and subject to change based on user feedback and further development.
@@ -29,7 +31,7 @@ files used create final products but are normally lost to the chaos of personal 
 shortly after work closes on a product. 
 
 How the web application works:
-The web application uses JSON file to update the page contents. 
+The web application uses a JSON file to update the page contents. 
 
 This JSON file is in a folder within the web application. Storing the file inside the
 application seemed like an easy way to add version control through Git, but
@@ -46,9 +48,20 @@ the build step is not required.
 ### Description of content you could add
 
 The first step here is to decided what parts of the project are important to store and 
-where. The 'portfolio' application is in an Amazon Web Services (AWS) 'bucket', http://internal.wma.chs.usgs.gov.s3-website-us-west-2.amazonaws.com/makerspace-portfolio/makerspace-portfolio-application/ .
-Inside that bucket there are folders related to project/efforts/functions of Makerspace.
-You can view this bucket using the AWS console. 
+where. The Makerspace 'portfolio' is in an Amazon Web Services (AWS) 'bucket'.
+
+`note: The easiest way to see the 'portfolio' file structure is to use the AWS Console. The AWS console has a 
+Graphic User Interface (GUI), which makes uploading files an deleting files a breeze. If you are
+new to the USGS, you will need to request a developer account to view the files. Once you have an account
+typing 'awsconsole.usgs.gov' into you browser will bring either give you access or bring you to the login screen. `
+
+Once in the AWS Console, you can ferret your way to the needed folders by selecting S3 (Simple Storage Solutions)
+from the initial menu (after the radio button for 'select a role' (hint: choose 'adfs-developers')), then enter 'internal.wma.chs.usgs.gov' in the 
+auto-completing search bar.
+
+`s3 >> internal.wma.chs.usgs.gov >> makerspace-portfolio`
+
+Inside the makerspace-portfolio folder in the internal.wma.chs.usg.gov bucket there are folders related to project/efforts/functions of Makerspace.
 If a folder does not exist for your project you can create it using the existing pattern as
 your guide. Generally speaking, each project folder has three sub-folders, 'final-product',
 'portfolio-images', and 'related-materials'.
@@ -65,7 +78,7 @@ Illustrator files required to produce a final product, various notes, scans of h
 screen shots, etc; the possibilities are endless. As noted for the 'final-product' folders
 if work was completed during discrete periods, use the date structure described. 
 
-`portfolio-images` folders - hold the image that for the thumbnail and product information
+`portfolio-images` folders - hold the image for the thumbnail and product information
 page. More about use of this folder is in the following section.
 
 ### Adding your product's information to the application 
@@ -75,16 +88,16 @@ has ended. The idea is that once entered into the portfolio, that entry should n
 modification again--it is archived--and will not need updates. Some exceptions to
 this do exist. One example exception would be something like a 'shelved' project that has been 'unshelved.'  
 
-In the assets folder of the AWS location mentioned earlier, you will find a file called 'projectDetails.js'. This file contains
-an exported JavaScript Object Notation (JSON) object. This object contains many sub-objects
-each of which represent a single Makerspace project/effort/function. 
+In the 'assets' folder of your clone of this project, you will find a file called 'projectDetails.js'. This file contains
+a JavaScript Object Notation (JSON) object. This object contains many sub-objects
+each of which represent a single Makerspace project/effort/function.
  
-Copy one of the preceding objects (each object is set off from 
+In your cloned version of the 'projectDetails.js', copy one of the existing objects (each object is set off from 
 the rest by a set of curly braces '{ }' and begins with '"id":"some number"',; yes there are other curly braces inside of the 
-main sets, but it is fairly easy to see the start and end) and paste it to the top of the
+main sets, but it is fairly easy to see the start and end). Once the copying is done, paste the to the top of the
 group using the current layout as a guide. 
 
-Once you have a new copy of an 'project' object, you will notice that there are 'key and value' pairs.
+Once you have a copy of an 'project' object, you will notice that there are 'key and value' pairs.
 For example, the key value pair for the 'id' of each project is '"id":"some number"'. The
 key here is '"id"' and the value is '"some number"'. You will want to go through and 
 change all 'values' to what is appropriate to your project. Never change the 'key' values. 
@@ -95,6 +108,16 @@ Some of the 'values' are in nested arrays that allow the association of multiple
 'periodsOfWork' and 'links'. While the pattern of adding these nested values would be difficult to explain in words, using the existing
 projects as a guide will make adding these values fairly straight forward. 
 
+`note: For the value related to the 'currentStatus' key, please use one of the following choices (note, list may change if needed)`
+
+`'complete' - use this if a defined period of work has ended; this usually results in an official 'product release', but may also be small item work that is a 'proof of concept' or 'Idea Blitz' related.` 
+
+`'shelved' - use this if a work on a project has ended, but no product has been officially released, and work might resume at some future date.`
+
+`'closed' - use this for work that has ended, but no product was officially released and there is no intent to resume work on the project at any future date.`
+
+`'in progress' - use this for projects which are still in active development and require current state of the project to be recorded. This situation is common near the end of fiscal reporting periods.`
+
 ### Adding the Thumbnail image
 
 The thumbnail image is the image seen on both the 'products' page and the page with the 
@@ -102,9 +125,12 @@ full description of the projects. This can be a 'screenshot' of something that w
 represent the project to 'portfolio' users. The current recommended dimensions of the 
 image are 1300 x 700 (but are subject to change as we better understand the layout of the application).
 
-Once you have the perfect thumbnail image you can upload it to the 'portfolio-images' of your
+Once you have the perfect thumbnail image you can upload it to the 'portfolio-images' folder of your
 project on AWS. You can then grab the URL of the image and replace the value related to 
-"thumbnail" key in the JSON file.
+"thumbnail" key in the JSON file. To copy the URL of your new thumbnail, click once on the name 
+of your thumbnail in the AWS Console. The AWS Console will present you with a new webpage with details 
+about your file. The last item on the page is the 'ObjectURL'. Right mouse click and then 'Copy link
+address'.
 
 ### Finishing up
 

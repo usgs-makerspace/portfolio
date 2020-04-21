@@ -1,5 +1,307 @@
+// Note for 'currentStatus' please use one of the following choices (note, list may change if needed)
+// complete - use this if a defined period of work has ended; this usually results in an official 'product release', but may also be small item work that is a 'proof of concept' or 'Idea Blitz' related.
+// shelved - use this if a work on a project has ended, but no product has been officially released, and work might resume at some future date.
+// closed - use this for work that has ended, but no product was officially released and there is no intent to resume work on the project at any future date.
+// in progress - use this for projects which are still in active development and require current state of the project to be recorded. This situation is common near the end of fiscal reporting periods.
+
 export default {
   projects: [
+    {
+      "id": "22",
+      "project": "WBEEP Timelapse",
+      "title": "Designer Timelapse for Water Storage",
+      "fundingProviders": ["VizLab"],
+      "previewText": "These 'electric' themes press the edges of the established map-color-bubble.",
+      "descriptionText": "Created as an extension of the WBEEP Fall 2020 Water storage gif, these 'designer' color schemes add a little pizazz to challenge the standard USGS design ethic.",
+      "thumbnail": "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/fall-water-storage-high-color/final-product/Water_Storage_Patterns_November_purple.gif",
+      "currentStatus": "Complete",
+      "currentStatusRationale": "Created as concepts for vivid color pallets",
+      "periodsOfWork": [
+        {
+          "workPeriod": {"startDate": "02-17-20", "endDate": "02-18-20"},
+          "contributors": ["Lindsay Platt", "Aaron Briggs"],
+        }
+      ],
+      "technologyUsed": ["Photoshop"],
+      "keyTerms": ["electric color"],
+      "keyPoints": "These graphics ask the user to question, 'is this a map or is it data visualized.'",
+      "links": [
+        ["purple animation", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/fall-water-storage-high-color/final-product/Water_Storage_Patterns_November_purple.gif"],
+        ["green animation", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/fall-water-storage-high-color/final-product/Water_Storage_Patterns_November_green.gif"],
+        ["Photoshop purple PSD", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/fall-water-storage-high-color/related-materials/Water_Storage_Patterns_November_tween_purple.psd"],
+        ["Photoshop green PSD", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/fall-water-storage-high-color/related-materials/Water_Storage_Patterns_November_tween_green.psd"]
+      ]
+    },
+
+    {
+      "id":"21",
+      "project": "Road Salt Viz",
+      "title":"Salt Pulse Mockup",
+      "fundingProviders": ["VizLab"],
+      "previewText":"A concept project illustrating a hypothetical salt pulse.",
+      "descriptionText":"A quick mock up of a possible road salt related visualization.",
+      "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/salt-pulse-mock-up/portfolio-images/saltPulseThumbnail.jpg",
+      "currentStatus": "Complete",
+      "currentStatusRationale": "Mock up",
+      "periodsOfWork": [
+        {
+          "workPeriod": { "startDate": "02-17-20", "endDate": "02-18-20"},
+          "contributors": ["Aaron Briggs"],
+        }
+      ],
+      "technologyUsed": ["Photoshop"],
+      "keyTerms": ["Salt Pulse", "Road Salt"],
+      "keyPoints": "This rough video was created as ground work for a possible visualization which would demonstrate how salt applied to roads upstream" +
+        "eventually makes its way downstream.",
+      "links": [
+        ["salt pulse video mockup", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/salt-pulse-mock-up/final-product/saltVizMockup_test.gif"],
+        ["Photoshop PSD", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/salt-pulse-mock-up/related-materials/saltVizMockup.psd"]
+      ]
+    },
+    {
+      "id":"20",
+      "project": "Process Diagram",
+      "title":"Makerspace Process Diagram",
+      "fundingProviders": ["VizLab"],
+      "previewText":"Design Sketch of the Makerspace Process",
+      "descriptionText":"A prototype video that attempts to capture the process of creation within Makerspace.",
+      "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/makerspace-process-video/portfolio-images/makerspaceProcessThumbnail.jpg",
+      "currentStatus": "Complete",
+      "currentStatusRationale": "Quick Mockup",
+      "periodsOfWork": [
+        {
+          "workPeriod": { "startDate": "03-10-20", "endDate": "03-11-20"},
+          "contributors": ["Aaron Briggs"],
+        }
+      ],
+      "technologyUsed": ["Photoshop"],
+      "keyTerms": ["Video", "Team Process"],
+      "keyPoints": "This was a quick mock up based on team discussions of processes. This work also improved our use of Photoshop for video creation and methods of video compression.",
+      "links": [
+        ["Makerspace Process Video", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/makerspace-process-video/final-product/TheMakerspaceProcess.mp4"],
+        ["Makerspace Process .gif", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/makerspace-process-video/final-product/WeAreMakerspace.gif"],
+        ["Photoshop PSD", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/makerspace-process-video/related-materials/WeAreMakerspace.psd"]
+      ]
+    },
+
+    {
+      "id":"19",
+      "project": "Idea Blitz",
+      "title":"Delaware Tour",
+      "fundingProviders": ["VizLab"],
+      "previewText":"A tour of monitoring locations in the Delaware Basin",
+      "descriptionText":"An interactive 'map story' application that takes the users on a virtual tour of the multitude of monitoring locations in the Delware River Basin.",
+      "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-january/delaware-tour/portfolio-images/drbTourThumbnail.jpg",
+      "currentStatus": "Shelved",
+      "currentStatusRationale": "Proved valuable in terms of learning tools, but did not have a clear hook for users.",
+      "periodsOfWork": [
+        {
+          "workPeriod": { "startDate": "01-06-20", "endDate": "01-15-20"},
+          "contributors": ["Marty Wernimont", "Megan Hines", "Aaron Briggs", "Chip Orr"],
+        }
+      ],
+      "technologyUsed": ["Vue", "JavaScript", "D3", "Mapbox"],
+      "keyTerms": ["map story"],
+      "keyPoints": "While this effort did not lead to a released product, it did widen the team's skill set. Some of the many new skills gained " +
+        "were D3 and Mapbox integration, scrolly telling with maps, toggling style layer, map overlays and automated GeoJson layer additions.",
+      "links": [
+        ["Deployed Application", "http://internal.wma.chs.usgs.gov.s3-website-us-west-2.amazonaws.com/makerspace-portfolio/idea-blitz/2020-january/delaware-tour/final-product"]
+      ]
+    },
+
+    {
+      "id":"18",
+      "project": "Idea Blitz",
+      "title":"Stream Flow Report",
+      "fundingProviders": ["VizLab"],
+      "previewText":"An interactive version of the stream flow report.",
+      "descriptionText":"An interative presentation that converts the bland 'Stream Flow Report' into an interesting user experience.",
+      "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-january/stream-flow-report-revisited/portfolio-images/streamFlowThumbnail.jpg",
+      "currentStatus": "Complete",
+      "currentStatusRationale": "Short term research",
+      "periodsOfWork": [
+        {
+          "workPeriod": { "startDate": "01-06-20", "endDate": "01-10-20"},
+          "contributors": ["Marty Wernimont", "Megan Hines", "Aaron Briggs"],
+        }
+      ],
+      "technologyUsed": ["Vue", "Mapbox", "GeoJson"],
+      "keyTerms": ["Interactive", "Story Map"],
+      "keyPoints": "",
+      "links": [
+        ["Deployed Application", "http://internal.wma.chs.usgs.gov.s3-website-us-west-2.amazonaws.com/makerspace-portfolio/idea-blitz/2020-january/stream-flow-report-revisited/final-product"]
+      ]
+    },
+
+    {
+      "id":"17",
+      "project": "Idea Blitz",
+      "title":"Forcast Noodle",
+      "fundingProviders": ["VizLab"],
+      "previewText":"Predictive Forcast Noodle",
+      "descriptionText":"",
+      "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-january/forecast-noodle/portfolio-images/forcastNoodleThumbnail.jpg",
+      "currentStatus": "Complete",
+      "currentStatusRationale": "Short term research",
+      "periodsOfWork": [
+        {
+          "workPeriod": {"startDate": "01-06-20", "endDate": "01-10-20"},
+          "contributors": ["Lindsay Platt", "David Watkins"],
+        }
+      ],
+      "technologyUsed": ["R"],
+      "keyTerms": [""],
+      "keyPoints": "",
+      "links": [
+        ["Animated .gif", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-january/forecast-noodle/final-product/forecast_noodle_friday_updates.mp4"]
+      ]
+    },
+
+    {
+      "id":"16",
+      "project": "Idea Blitz",
+      "title":"MEA Data",
+      "fundingProviders": ["VizLab"],
+      "previewText":"MEA Data Visualized with D3",
+      "descriptionText":"",
+      "thumbnail":"",
+      "currentStatus": "Complete",
+      "currentStatusRationale": "Short term research",
+      "periodsOfWork": [
+        {
+          "workPeriod": {"startDate": "01-06-20", "endDate": "01-10-20"},
+          "contributors": ["Chip Orr"],
+        }
+      ],
+      "technologyUsed": ["D3"],
+      "keyTerms": [""],
+      "keyPoints": "",
+      "links": [
+        ["", ""]
+      ]
+    },
+
+    {
+      "id":"15",
+      "project": "Idea Blitz",
+      "title":"Interactive PH Scale",
+      "fundingProviders": ["VizLab"],
+      "previewText":"Interactive PH Scale",
+      "descriptionText":"For the water science school, a new concept for learning about PH.",
+      "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-march/ph-scale/portfolio-images/phThumbnail.jpg",
+      "currentStatus": "Complete",
+      "currentStatusRationale": "Short term research",
+      "periodsOfWork": [
+        {
+          "workPeriod": { "startDate": "03-20-20", "endDate": "03-24-20"},
+          "contributors": ["Megan Hines"],
+        }
+      ],
+      "technologyUsed": [""],
+      "keyTerms": [""],
+      "keyPoints": "",
+      "links": [
+        ["Power Point", "https://doimspp.sharepoint.com/:p:/r/sites/gs-wma-iidd-makerspace/_layouts/15/Doc.aspx?sourcedoc=%7B62C4513A-86DB-4507-A7FE-3A2FAAC03D4B%7D&file=Water%20Science%20School%20-%20Interactive%20pH%20scale.pptx&action=edit&mobileredirect=true"]
+      ]
+    },
+
+    {
+      "id":"14",
+      "project": "Idea Blitz",
+      "title":"Ground Water Depletion",
+      "fundingProviders": ["VizLab"],
+      "previewText":"Ground Water Depletion",
+      "descriptionText":"Review of Ground Water Depletion",
+      "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-march/ground-water-depletion/portfolio-images/groundWaterDepletionThumbnail.jpg",
+      "currentStatus": "Complete",
+      "currentStatusRationale": "Short term research",
+      "periodsOfWork": [
+        {
+          "workPeriod": { "startDate": "03-20-20", "endDate": "03-24-20"},
+          "contributors": ["Megan Hines"],
+        }
+      ],
+      "technologyUsed": [""],
+      "keyTerms": [""],
+      "keyPoints": "",
+      "links": [
+        ["Power Point", "https://doimspp.sharepoint.com/:p:/r/sites/gs-wma-iidd-makerspace/_layouts/15/Doc.aspx?sourcedoc=%7B7E50AA72-12D8-4627-8116-1D7BD0F0EBB1%7D&file=Groundwater%20Depletion.pptx&action=edit&mobileredirect=true"]
+      ]
+    },
+
+    {
+      "id":"13",
+      "project": "Idea Blitz",
+      "title":"A/B Testing",
+      "fundingProviders": ["VizLab"],
+      "previewText":"A/B Testing",
+      "descriptionText":"Review of A/B testing techniques",
+      "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-march/a-b-testing/portfolio-images/ABTesting.jpg",
+      "currentStatus": "Complete",
+      "currentStatusRationale": "Short term research",
+      "periodsOfWork": [
+        {
+          "workPeriod": { "startDate": "03-20-20", "endDate": "03-24-20"},
+          "contributors": ["David Watkins"],
+        }
+      ],
+      "technologyUsed": [""],
+      "keyTerms": [""],
+      "keyPoints": "",
+      "links": [
+        ["Power Point", "https://doimspp-my.sharepoint.com/:p:/g/personal/wwatkins_usgs_gov/ETWS8bc647hKqctSzzrJJ0YBEkEepAIq8PHmQshu643SwA?e=gZME0L"]
+      ]
+    },
+
+    {
+      "id":"12",
+      "project": "Idea Blitz",
+      "title":"Rethink Coastal Viz",
+      "fundingProviders": ["VizLab"],
+      "previewText":"Rethink Coastal Visualizations",
+      "descriptionText":"",
+      "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-march/coastal-focus-rethink/final-product/lplatt_all_coasts_transition_bars.gif",
+      "currentStatus": "Complete",
+      "currentStatusRationale": "Short term experiment",
+      "periodsOfWork": [
+        {
+          "workPeriod": { "startDate": "03-20-20", "endDate": "03-24-20"},
+          "contributors": ["Lindsay Platt"],
+        }
+      ],
+      "technologyUsed": ["R"],
+      "keyTerms": ["coastal"],
+      "keyPoints": "",
+      "links": [
+        ["animated .gif", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-march/coastal-focus-rethink/final-product/lplatt_all_coasts_transition_bars.gif"]
+      ]
+    },
+
+    {
+      "id":"11",
+      "project": "Makerspace",
+      "title":"Makerspace Journal",
+      "fundingProviders": ["VizLab"],
+      "previewText":"A demonstration of VuePress",
+      "descriptionText":"A prototype project to demonstrate documentation made easy with the VuePress framework.",
+      "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/makerspace-journal/portfolio-images/JournalThumbnail.jpg",
+      "currentStatus": "Shelved",
+      "currentStatusRationale": "This was a proof of concept. In theory it worked well, but there was little adoption from the team" +
+        "and so no further work is underway.",
+      "periodsOfWork": [
+        {
+          "workPeriod": { "startDate": "01-10-20", "endDate": "01-13-20"},
+          "contributors": ["Aaron Briggs"],
+        }
+      ],
+      "technologyUsed": ["Vue", "JavaScript", "VuePress"],
+      "keyTerms": ["blog", "journal"],
+      "keyPoints": "This was a demonstration of VuePress to maintain documentation.",
+      "links": [
+        ["deployed application", "http://internal.wma.chs.usgs.gov.s3-website-us-west-2.amazonaws.com/makerspace-portfolio/makerspace-journal/final-product"]
+      ]
+    },
+
     {
       "id":"10",
       "project": "WBEEP - Natural Water Storage Concept Map",
@@ -10,7 +312,7 @@ export default {
           "available daily estimates of natural water storage for approximately 110,000 regions across the " +
           "lower forty-eight states. Map shading indicates the current natural water storage relative to " +
           "historical conditions for this time of year.",
-    "thumbnail":"s3://internal.wma.chs.usgs.gov/makerspace-portfolio/water-budget-estimation-evaluation-project/wbeep-water-storage/portfolio-images/wbeep_still_image.png",
+    "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/water-budget-estimation-evaluation-project/wbeep-water-storage/portfolio-images/wbeep_still_image.png",
     "currentStatus": "complete",
     "currentStatusRationale": "This concept map was released publicly Dec 18, 2019 to meet a deadline defined in the Presidential Memo on Water in the West.",
     "periodsOfWork": [
@@ -44,7 +346,6 @@ export default {
   },
 
     {
-
       "id":"9",
       "project": "WBEEP",
       "title":"Three Dimensional Extrusion",
@@ -64,7 +365,7 @@ export default {
       "keyTerms": ["3D Extrusion"],
       "keyPoints": "A demonstration of Mabbox GL's ability to render 110,000 polygons in 3D with minimal lag time.",
       "links": [
-        ["deployed application", "http://internal.wma.chs.usgs.gov.s3-website-us-west-2.amazonaws.com/makerspace-portfolio/three-d-extrusion/final-product/index.html"]
+        ["deployed application", "http://internal.wma.chs.usgs.gov.s3-website-us-west-2.amazonaws.com/makerspace-portfolio/three-d-extrusion-test/final-product"]
       ]
     },
 
