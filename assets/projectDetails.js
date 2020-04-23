@@ -2,7 +2,7 @@
 // complete - use this if a defined period of work has ended; this usually results in an official 'product release', but may also be small item work that is a 'proof of concept' or 'Idea Blitz' related.
 // shelved - use this if a work on a project has ended, but no product has been officially released, and work might resume at some future date.
 // closed - use this for work that has ended, but no product was officially released and there is no intent to resume work on the project at any future date.
-// in progress - use this for projects which are still in active development and require current state of the project to be recorded. This situation is common near the end of fiscal reporting periods.
+// in progress - use this for projectsDetails which are still in active development and require current state of the project to be recorded. This situation is common near the end of fiscal reporting periods.
 
 export default {
   projects: [
@@ -51,8 +51,7 @@ export default {
       ],
       "technologyUsed": ["Photoshop"],
       "keyTerms": ["Salt Pulse", "Road Salt"],
-      "keyPoints": "This rough video was created as ground work for a possible visualization which would demonstrate how salt applied to roads upstream" +
-        "eventually makes its way downstream.",
+      "keyPoints": "This rough video was created as ground work for a possible visualization which would demonstrate how salt applied to roads upstream eventually makes its way downstream.",
       "links": [
         ["salt pulse video mockup", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/salt-pulse-mock-up/final-product/saltVizMockup_test.gif"],
         ["Photoshop PSD", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/salt-pulse-mock-up/related-materials/saltVizMockup.psd"]
@@ -102,8 +101,7 @@ export default {
       ],
       "technologyUsed": ["Vue", "JavaScript", "D3", "Mapbox"],
       "keyTerms": ["map story"],
-      "keyPoints": "While this effort did not lead to a released product, it did widen the team's skill set. Some of the many new skills gained " +
-        "were D3 and Mapbox integration, scrolly telling with maps, toggling style layer, map overlays and automated GeoJson layer additions.",
+      "keyPoints": "While this effort did not lead to a released product, it did widen the team's skill set. Some of the many new skills gained were D3 and Mapbox integration, scrolly telling with maps, toggling style layer, map overlays and automated GeoJson layer additions.",
       "links": [
         ["Deployed Application", "http://internal.wma.chs.usgs.gov.s3-website-us-west-2.amazonaws.com/makerspace-portfolio/idea-blitz/2020-january/delaware-tour/final-product"]
       ]
@@ -286,8 +284,7 @@ export default {
       "descriptionText":"A prototype project to demonstrate documentation made easy with the VuePress framework.",
       "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/makerspace-journal/portfolio-images/JournalThumbnail.jpg",
       "currentStatus": "Shelved",
-      "currentStatusRationale": "This was a proof of concept. In theory it worked well, but there was little adoption from the team" +
-        "and so no further work is underway.",
+      "currentStatusRationale": "This was a proof of concept. In theory it worked well, but there was little adoption from the team and so no further work is underway.",
       "periodsOfWork": [
         {
           "workPeriod": { "startDate": "01-10-20", "endDate": "01-13-20"},
@@ -308,10 +305,7 @@ export default {
       "title":"National Integrated Water Availability Assessments-Concept Map",
       "fundingProviders": ["WBEEP"],
       "previewText":"Mapbox interactive map of natural water storage as an indicator of water availability ",
-      "descriptionText":"This is a demonstration map and is not for decision making. It shows the latest " +
-          "available daily estimates of natural water storage for approximately 110,000 regions across the " +
-          "lower forty-eight states. Map shading indicates the current natural water storage relative to " +
-          "historical conditions for this time of year.",
+      "descriptionText":"This is a demonstration map and is not for decision making. It shows the latest available daily estimates of natural water storage for approximately 110,000 regions across the lower forty-eight states. Map shading indicates the current natural water storage relative to historical conditions for this time of year.",
     "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/water-budget-estimation-evaluation-project/wbeep-water-storage/portfolio-images/wbeep_still_image.png",
     "currentStatus": "complete",
     "currentStatusRationale": "This concept map was released publicly Dec 18, 2019 to meet a deadline defined in the Presidential Memo on Water in the West.",
@@ -323,12 +317,7 @@ export default {
   ],
     "technologyUsed": ["Mapbox", "Vue", "R"],
     "keyTerms": ["mapbox", "map", "interactive", "vector tiles"],
-    "keyPoints": "This was the first Makerspace project. We explored and tested new technologies in order to " +
-        "have an interactive map with over 100K features that loaded and performed efficiently for users. Ultimately, " +
-        "we chose to use Mapbox vector tiles as the main technology. The application's framework is built using Vue " +
-        "and the data behind the tiles was generated in R. It set the foundation for a lot of MxS projects - we " +
-        "created the " + ["makerspace-website-base", "https://github.com/usgs-makerspace/makerspace-website-base"] +
-        "repository coming out of this project that initiates a simple Vue project framework.",
+    "keyPoints": "This was the first Makerspace project. We explored and tested new technologies in order to have an interactive map with over 100K features that loaded and performed efficiently for users. Ultimately, we chose to use Mapbox vector tiles as the main technology. The application's framework is built using Vue and the data behind the tiles was generated in R. It set the foundation for a lot of MxS projectsDetails - we created the repository coming out of this project that initiates a simple Vue project framework.",
     "links": [
     ["Website - Production", "https://labs.waterdata.usgs.gov/estimated-availability"],
     ["Website - Quality Assurance", "http://wbeep-qa-website.s3-website-us-west-2.amazonaws.com/estimated-availability/"],
@@ -375,8 +364,7 @@ export default {
       "title":"Gages Through the Age",
       "fundingProviders": ["VizLab"],
       "previewText":"USGS Monitoring Locations Over Time.",
-      "descriptionText":"A visualization including several graphics relating to the changes in density and placement of" +
-        "water monitoring locations over the last 130 plus years.",
+      "descriptionText":"A visualization including several graphics relating to the changes in density and placement of water monitoring locations over the last 130 plus years.",
       "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/gages-through-the-ages/portfolio-images/gagesThroughTheAgesThumbnail.jpg",
       "currentStatus": "in progress",
       "currentStatusRationale": "project is moving forward",
@@ -466,9 +454,7 @@ export default {
       ],
       "technologyUsed": ["R, Photoshop"],
       "keyTerms": ["video", "animation"],
-      "keyPoints": "A video animation using the daily data retrieved from the Water Availability Assessment map." +
-        "The R scripts were used to generate the maps for 80+ days of data. Photoshop was used to stitch the maps" +
-        "together and generated the animation.",
+      "keyPoints": "A video animation using the daily data retrieved from the Water Availability Assessment map. The R scripts were used to generate the maps for 80+ days of data. Photoshop was used to stitch the maps together and generated the animation.",
       "links": [
         ["finished video", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/water-availability-time-lapse/final-product/waterstorage_time_lapse_PalWidescreen.mp4"],
         ["Animated .gif", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/water-availability-time-lapse/final-product/waterstorage_time_lapse_1080x1920.gif"],
@@ -507,8 +493,7 @@ export default {
       "title":"Where Is Earth's Water",
       "fundingProviders": ["VizLab"],
       "previewText":"Video demonstration of Photoshop animation ",
-      "descriptionText":"An animated remake of various graphics from the Water Science School to help learners better " +
-        "visualize the tiny percentage of the Earth's water that is consumable by humans.",
+      "descriptionText":"An animated remake of various graphics from the Water Science School to help learners better visualize the tiny percentage of the Earth's water that is consumable by humans.",
       "thumbnail":"https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-march/where-is-earths-water/portfolio-images/whereIsWater1300x726.jpg",
       "currentStatus": "shelved",
       "currentStatusRationale": "Where is the Earth's Water Video was presented as Idea Blitz item, and no further action has been taken.",
@@ -520,11 +505,7 @@ export default {
         ],
       "technologyUsed": ["Photoshop"],
       "keyTerms": ["video", "animation"],
-      "keyPoints": "This project attempted to demonstrate how the animation capabilities of Photoshop can enhance " +
-        "existing static visualizations. In terms of technology, this showed that using 30 frames per second produced smooth" +
-        "video. Rendering the video in Photoshop resulted in end products with prodigious file size. However, taking" +
-        "the Photoshop rendered video and using online file compression such as https://www.ps2pdf.com/compress-mp4 file " +
-        "a file size reduction of 10 to 1 is possible with no noticeable loss in quality.",
+      "keyPoints": "This project attempted to demonstrate how the animation capabilities of Photoshop can enhance existing static visualizations. In terms of technology, this showed that using 30 frames per second produced smooth video. Rendering the video in Photoshop resulted in end products with prodigious file size. However, taking the Photoshop rendered video and using online file compression such as https://www.ps2pdf.com/compress-mp4 file a file size reduction of 10 to 1 is possible with no noticeable loss in quality.",
       "links": [
         ["finished video", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-march/where-is-earths-water/final-product/WhereIsWater_p2_30fps_compressed_slowed.mp4"],
         ["Original Water Science School Version", "https://www.usgs.gov/special-topic/water-science-school/science/how-much-water-there-earth?qt-science_center_objects=0#qt-science_center_objects"],
@@ -578,8 +559,7 @@ export default {
       ],
       "technologyUsed": ["JavaScript, Vue, JSON"],
       "keyTerms": ["Style Maps", "Water Science School"],
-      "keyPoints": "The How Wet Is My State Map Styler is a proof-of-concept application. It shows how data from a standard table, with a simple conversion to JSON" +
-        "can be used to quickly create sets of maps, styled to taste, for insertion into web pages.",
+      "keyPoints": "The How Wet Is My State Map Styler is a proof-of-concept application. It shows how data from a standard table, with a simple conversion to JSON can be used to quickly create sets of maps, styled to taste, for insertion into web pages.",
       "links": [
         ["Deployed Application", "https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/idea-blitz/2020-march/how-wet-is-my-state/final-product/index.html"],
         ["GitHub", "https://github.com/abriggs-usgs/wbeep-viz/tree/ideaBlitz_waterPerState"],

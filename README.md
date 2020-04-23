@@ -1,8 +1,6 @@
 # makerspace-portfolio
 
 > Gallery of Makerspace Projects
-http://internal.wma.chs.usgs.gov.s3-website-us-west-2.amazonaws.com/makerspace-portfolio/makerspace-portfolio-application/
-
 
 ## Notes and Instructions
 Note: This is a work in progress and subject to change based on user feedback and further development.
@@ -142,7 +140,7 @@ address'.
 Once you have modified the JSON file to include your project's details, all the only step left is 
 to push your work to the GitHub repository and make a pull request. 
 
-And that is it. May it seem complicated on a first reading, but in reality the process is pretty straight forward.   
+And that is it. It might seem complicated on a first reading, but in reality the process is pretty straight forward.   
 
  
 ## Build Setup

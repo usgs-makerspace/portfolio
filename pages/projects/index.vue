@@ -20,7 +20,23 @@
     },
     data() {
       return {
-        projects: projectDetails.projects
+        projects: projectDetails.projects,
+      }
+    },
+    computed: {
+      projectDetails: function() {
+        return this.$store.state.projectDetails;
+      }
+    },
+    mounted() {
+      this.xxxloadProjectDetails();
+    },
+    methods: {
+      xxxloadProjectDetails() {
+        console.log('computed ', this.projectDetails)
+
+        console.log('state ', this.$store.state.projectDetails)
+
       }
     }
   }
