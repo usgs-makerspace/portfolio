@@ -29,7 +29,6 @@
       }
     },
     async fetch () {
-      // const url = 'https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/makerspace-portfolio-application/projectDetails.js';
       const url = 'https://maptiles-prod-website.s3-us-west-2.amazonaws.com/misc/projectDetails.js';
       this.projects = await this.$http.$get(url);
     },
