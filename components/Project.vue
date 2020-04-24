@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="'/projectsDetails/' + id">
+  <nuxt-link :to="'/projects/' + id">
     <article class="project">
       <div class="thumbnail" :style="{backgroundImage: 'url(' + thumbnail + ')'}"></div>
       <h1>{{ title }}</h1>

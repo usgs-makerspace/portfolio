@@ -68,16 +68,20 @@
     </div>
   </section>
 </template>
-
 <script>
-  import projectDetails from "../../../assets/projectDetails";
 
   export default {
     data() {
       return {
-        project: projectDetails.projects.find(project => project.id === this.$route.params.id)
+        project: []
       }
-    }
+    },
+    async fetch () {
+      const url = 'https://maptiles-prod-website.s3-us-west-2.amazonaws.com/misc/projectDetails.js';
+      const projects = await this.$http.$get(url);
+      this.project = await projects.find(project => project.id === this.$route.params.id);
+    },
+    serverPrefetch: false
   }
 </script>
 

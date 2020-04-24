@@ -42,8 +42,11 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/axios'
+    '@nuxt/http'
   ],
+  http: {
+    // proxyheaders: false
+  },
   /*
   ** Build configuration
   */
@@ -54,8 +57,5 @@ export default {
     extend (config, ctx) {
     },
     publicPath: './'
-  },
-  axios: {
-    // proxyHeaders: false
   }
 }

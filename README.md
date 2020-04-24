@@ -31,10 +31,7 @@ shortly after work closes on a product.
 How the web application works:
 The web application uses a JSON file to update the page contents. 
 
-This JSON file is in a folder within the web application. Storing the file inside the
-application seemed like an easy way to add version control through Git, but
-the JSON file can also be stored in an external location such as a S3 bucket. I am 
-open to suggestions whether that would be a better option.   
+This JSON file is in a folder on S3 (ask a team member for the location).   
 
 ## How to Get Your Project to Show on the Projects Page 
 Fork the repository. Clone your fork to your local system. 
@@ -91,11 +88,11 @@ has ended. The idea is that once entered into the portfolio, that entry should n
 modification again--it is archived--and will not need updates. Some exceptions to
 this do exist. One example exception would be something like a 'shelved' project that has been 'unshelved.'  
 
-In the 'assets' folder of your clone of this project, you will find a file called 'projectDetails.js'. This file contains
-a JavaScript Object Notation (JSON) object. This object contains many sub-objects
-each of which represent a single Makerspace project/effort/function.
+As mentioned earlier, the JSON file with the has the details for each project is stored in an AWS S3 bucket.
+While this is not an ideal work pattern, you will need to download a copy of the projectDetails.js file from
+AWS S3. From there you can modify the file and once done, upload the new file the AWS S3 bucket. 
  
-In your cloned version of the 'projectDetails.js', copy one of the existing objects (each object is set off from 
+In the downloaded version of the 'projectDetails.js', copy one of the existing objects (each object is set off from 
 the rest by a set of curly braces '{ }' and begins with '"id":"some number"',; yes there are other curly braces inside of the 
 main sets, but it is fairly easy to see the start and end). Once the copying is done, paste the to the top of the
 group using the current layout as a guide. 

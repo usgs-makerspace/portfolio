@@ -10,9 +10,6 @@
   export default {
     components: {
       Header
-    },
-    beforeCreate() {
-      this.$store.dispatch('projectDetails/getProjectDetails');
     }
   }
 </script>
